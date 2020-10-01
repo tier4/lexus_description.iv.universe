@@ -2,7 +2,7 @@
 <launch>
 
   <arg name="use_kvaser" default="true"/>
-  <arg name="kvaser_hardware_id" default="27733"/>
+  <arg name="kvaser_hardware_id" default="$(env KVASER_HARDWARE_ID)"/>
   <arg name="use_ssc" default="false"/>
 
   <arg name="max_throttle" default="0.4"/>

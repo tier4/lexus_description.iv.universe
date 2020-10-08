@@ -1,2 +1,2 @@
 # lexus_description.iv
-lexus_description for autoware.iv
+lexus_description for pilot.auto

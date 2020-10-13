@@ -8,6 +8,8 @@
   <arg name="max_throttle" default="0.4"/>
   <arg name="max_brake" default="0.8"/>
 
+  <arg name="pacmod_param_path" default="$(find as)/config/pacmod_param.yaml"/>
+
   <!-- pacmod3 -->
   <group ns="pacmod">
     <include file="$(find pacmod3)/launch/pacmod3.launch">
@@ -33,8 +35,7 @@
 
   <!-- pacmod_interface -->
   <include file="$(find as)/launch/pacmod_interface.launch" if="$(eval use_ssc==false)">
-    <arg name="max_throttle" value="$(arg max_throttle)"/>
-    <arg name="max_brake" value="$(arg max_brake)"/>
+    <arg name="pacmod_param_path" value="$(arg pacmod_param_path)"/>
   </include>
 
 </launch>

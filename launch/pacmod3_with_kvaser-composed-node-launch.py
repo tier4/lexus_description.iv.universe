@@ -82,11 +82,11 @@ def generate_launch_description():
                                                          'driver_params.yaml')),
         DeclareLaunchArgument('reader_params_path',
                               default_value=os.path.join(kvaser_share_dir,
-                                                         'launch',
+                                                         'config',
                                                          'reader_params.yaml')),
         DeclareLaunchArgument('writer_params_path',
                               default_value=os.path.join(kvaser_share_dir,
-                                                         'launch',
+                                                         'config',
                                                          'writer_params.yaml')),
         OpaqueFunction(function=launch_setup),
     ])
